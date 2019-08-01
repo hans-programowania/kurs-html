@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Podstawowa struktura strony HTML5</title>
+    </head>
+    <body>
+
+        <!-- Główna nawigacja strony -->
+        <!-- EMMET: nav>ul>li*5>a{menu item $} -->
+        <nav>
+            <ul>
+                <li><a href="">menu item 1</a></li>
+                <li><a href="">menu item 2</a></li>
+                <li><a href="">menu item 3</a></li>
+                <li><a href="">menu item 4</a></li>
+                <li><a href="">menu item 5</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- Główny nagłówek strony -->
+        <!-- EMMET: header>h1{Główny slogan strony}+p{Opis co znajduje się na stronie} -->
+        <header>
+            <h1>Główny slogan strony</h1>
+            <p>Opis co znajduje się na stronie</p>
+        </header>
+
+
+        <!-- MAIN - Główna sekcja strony -->
+        <!-- EMMET: main>(section>h2{Wpisy na blogu:})+(article>h3{Wpis na blogu $}+p>lorem30)*2 -->
+        <main>
+            <section>
+                <h2>Wpisy na blogu:</h2>
+            </section>
+            <article>
+                <h3>Wpis na blogu 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur rerum harum ut voluptate porro veniam sunt excepturi esse quisquam laborum officia saepe quia perferendis, alias provident neque reprehenderit ullam animi.</p>
+            </article>
+            <article>
+                <h3>Wpis na blogu 2</h3>
+                <p>Illum suscipit quia, at quod possimus sunt eum ipsam molestiae nihil in velit molestias voluptate, voluptates temporibus praesentium ipsa ex ab amet, provident est ducimus tenetur. Eligendi impedit hic beatae?</p>
+            </article>
+        </main>
+
+
+        <!-- Sidebar prawy -->
+        <!-- EMMET: aside>(nav>ul>li*6>a{Menu Item $})+(section>(h4{Instagram})+(figure>img+figurecaption>{Tytuł obrazka})) -->
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="">Menu Item 1</a></li>
+                    <li><a href="">Menu Item 2</a></li>
+                    <li><a href="">Menu Item 3</a></li>
+                    <li><a href="">Menu Item 4</a></li>
+                    <li><a href="">Menu Item 5</a></li>
+                    <li><a href="">Menu Item 6</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h4>Instagram</h4>
+                <figure>
+                    <img src="" alt="">
+                    <figurecaption>Tytuł obrazka</figurecaption>
+                </figure>
+            </section>
+        </aside>
+        
+
+        <!-- Stopka strony -->
+        <!-- EMMET: footer>p>{Copyright &copy 2019} -->
+        <footer>
+            <p>Copyright &copy 2019</p>
+        </footer>
+
+    </body>
+</html>
