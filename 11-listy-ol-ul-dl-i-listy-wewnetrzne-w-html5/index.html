@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Listy ol ul dl i listy wewnętrzne w HTML5</title>
+</head>
+<body>
+    
+    <!-- Listy uporządkowane -->
+    <h2>Listy uporządkowane</h2>
+    <ol>
+        <li>Styczeń</li>
+        <li>Luty</li>
+        <li>Marzec</li>
+        <li>Kwiecień</li>
+        <li>Maj</li>
+        <li>Czerwiec</li>
+        <li>Lipiec</li>
+        <li>Sierpień</li>
+        <li>Wrzesień</li>
+        <li>Październik</li>
+        <li>Listopad</li>
+        <li>Grudzień</li>
+    </ol>
+
+    <!-- Atrybut start -->
+    <ol start="3">
+        <li>trzeci</li>
+        <li>czwarty</li>
+        <li>piąty</li>
+        <li>szósty</li>
+    </ol>
+
+    <!-- Atrybut value -->
+    <ol start="3">
+        <li>trzeci</li>
+        <li>czwarty</li>
+        <li>piąty</li>
+        <li value="2">szósty z numerem 2</li>
+    </ol>  
+    
+    <!-- Atrybut reversed -->
+    <ol reversed>
+        <li>pierwszy</li>
+        <li>drugi</li>
+        <li>trzeci</li>
+        <li>czwarty</li>
+    </ol>
+
+    <!-- Atrybut type -->
+    <!-- 1|a|A|i|I
+        1 - Domyślna wartość - liczby dziesiętne
+        a - Alfabetyczne uporządkowanie z małych liter
+        A - Alfabetyczne uporządkowanie z dużych liter
+        i - Uporządkowanie wg. rzymskich cyfr (małymi literami)
+        I - Uporządkowanie wg. rzymskich cyfr (dużymi literami) -->
+    <ol type="I" reversed>
+        <li>pierwszy</li>
+        <li>drugi</li>
+        <li>trzeci</li>
+        <li>czwarty</li>
+    </ol>  
+    
+    
+
+
+    <!-- Listy nieuporządkowane - ul -->
+    <h2>Listy nieuporządkowane</h2>
+    <ul>
+        <li>Asia</li>
+        <li>Basia</li>
+        <li>Hans</li>
+        <li>Krzyś</li>
+        <li>Monia</li>
+    </ul>
+
+
+
+
+    <!-- Listy zagnieżdzone -->
+    <h2>Listy zagnieżdzone</h2>
+    <ol>
+        <li>Zrobić zakupy:
+            <ol type="a">
+                <li>Chleb</li>
+                <li>Jaja</li>
+                <li>Masło</li>
+            </ol>    
+        </li>
+        <li>Odebrać tatę z dworca</li>
+        <li>Zadwonić do:
+            <ul>
+                <li>Szef</li>
+                <li>Mamy</li>
+                <li>Łukasz</li>
+            </ul>
+        </li>
+    </ol>
+
+
+
+
+    <!-- Listy definicji - dl -->
+    <h2>Listy definicji</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hyper Text Marup Language - Język opisu stron internetowych</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets - Kaskadowe arkusze styli</dd>
+        <dt>JavaScript</dt>
+        <dd>Front End'owy język programowania</dd>
+        <dd>Back End'owy język programowania</dd>
+    </dl>
+
+</body>
+</html>
