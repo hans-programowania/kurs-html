@@ -7,26 +7,39 @@
     <title>Obrazki i zdjęcia na stronie w HTML5 - img, figure, figcaption</title>
 </head>
 <body>
+
     <h1>Obrazki i zdjęcia na stronie w HTML5</h1>
+
+
+    <h2>img</h2> 
+    <!-- Do przestudiowania - szczegóły wyświetlania obrazów na urządzeniach mobilnych
+    https://grafmag.pl/artykuly/grafiki-na-responsywnej-stronie-internetowej 
+    - img alt
+    - atrybut srcset = 1x 2x
+    - atrybut sizes
+
+    -->
+    <img sizes="(min-width: 600px) 80vw, 50vw" srcset="img/warszawa-2x.jpg 849w, img/warszawa.jpg 170w" src="img/warszawa.jpg" alt="Temperatury w Warszawie" style="max-width: 100%;">
+    <br>
+    <br>
+    <br>
+
+    
 
     <h2>picture - source - img</h2>
     <picture>
-        <source media="(min-width: 650px)" srcset="img/warszawa-2x.jpg">
-        <img src="img/warszawa.jpg" alt="Warszawa" style="width:auto;">
+        <source media="(min-width: 700px)" srcset="img/warszawa-2x.jpg">
+        <img src="img/warszawa.jpg" alt="Warszawa" style="max-width: 100%;">
     </picture>
     <br>
     <br>
     <br>
 
-    <h2>img</h2>
-    <!-- Do przestudiowania - szczegóły wyświetlania obrazów na urządzeniach mobilnych
-    https://grafmag.pl/artykuly/grafiki-na-responsywnej-stronie-internetowej -->
-    <img sizes="(min-width: 700px) 80vw, 50vw" srcset="img/warszawa-2x.jpg 3x, img/warszawa.jpg 1x" src="img/warszawa.jpg" alt="Temperatury w Warszawie">
 
     <p>
         Lorem450 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consectetur nam nulla et? Iure soluta placeat enim aspernatur, dolore qui consectetur, delectus perferendis expedita culpa voluptatum maiores quod! Reprehenderit quasi nihil sequi dignissimos minima ipsum adipisci ullam! Dicta odit sequi fugiat nostrum animi quibusdam voluptatibus possimus quos libero at necessitatibus rerum accusantium fugit, maiores ab, eius iste, quo iure voluptate alias magni laudantium consequatur voluptatem commodi. Architecto, saepe molestiae quibusdam ipsam itaque alias vitae suscipit vero accusamus cumque debitis doloribus modi, porro aspernatur iste eveniet sed aliquam dolorem quos molestias autem nisi dignissimos! Ab, velit. Dolorem, autem inventore voluptatibus ut voluptatem a ipsa, excepturi non aliquid velit enim nesciunt vero doloremque quod iure in! Laboriosam nulla eveniet optio voluptas voluptatibus perferendis, cupiditate aliquam qui obcaecati veritatis accusamus repellat expedita excepturi, explicabo voluptatem quam dolore delectus id. Vitae voluptates quasi atque aut! Maiores amet illum, magnam quia sit alias dolor quas ipsa tempore itaque optio quaerat quam consectetur. Consequatur obcaecati nam officiis unde nemo explicabo pariatur autem recusandae commodi! Itaque, doloremque quis? Obcaecati voluptatum quia temporibus, ipsum iure nesciunt hic veniam sunt praesentium a expedita ex earum quaerat, non sed harum voluptates laudantium dolorem libero repellat provident totam nostrum eos at. Unde voluptatum molestias laudantium porro voluptas? Delectus, quaerat magnam voluptas officiis vitae distinctio rerum enim saepe blanditiis deleniti porro unde sint cum pariatur illum iusto. Error consequuntur delectus et ducimus vel illo libero. Asperiores quo hic consectetur, necessitatibus quae maxime doloribus maiores nobis voluptatem dolorem minima quas excepturi, sequi, et ipsum illum. 
         <figure>
-            <img src="img/temperatura.jpg" alt="Średnia temperatura w Warszawie">
+            <img src="img/temperatura.jpg" alt="Średnia temperatura w Warszawie" style="max-width: 100%;">
             <figcaption>Średnie temperatury w Warszawie</figcaption>
         </figure>
         Accusantium delectus vero quia vitae? Aspernatur ex unde excepturi veritatis voluptas, est labore id, saepe maxime eveniet sint sed molestiae quae. Numquam tenetur laboriosam nisi eveniet, iusto totam ipsam vel non magnam quaerat? Dolore quas dolor nulla quisquam provident pariatur voluptas recusandae minima possimus deleniti incidunt inventore omnis dolorum, temporibus fuga perspiciatis sapiente ducimus quos optio nostrum architecto? Harum minima fugiat suscipit, facilis veritatis corporis sequi nemo neque amet eos ab sint ad animi impedit sapiente quis? Fuga neque in placeat, necessitatibus earum qui id dolorum a quisquam enim facilis alias dolore sequi pariatur suscipit corrupti vitae eligendi quasi sint eaque esse? Itaque natus illo sit fugiat. Ex delectus ipsum illum mollitia quibusdam, blanditiis magni dolore suscipit necessitatibus nostrum perspiciatis quam architecto nemo. Similique asperiores temporibus sint maxime! Optio maxime quam eveniet praesentium adipisci magni eos neque dolorem autem sint deserunt voluptates inventore illo, saepe consequatur culpa velit nulla sit facere suscipit iure nam reprehenderit. Cum delectus nesciunt autem sed beatae quo doloribus ipsum eaque cumque sequi aliquid saepe facere, labore dolores atque et qui repellat corporis quibusdam quidem, ad praesentium id debitis? Qui ratione aliquam a dolore dolorum eaque vitae aspernatur deserunt sit, necessitatibus maiores aut reiciendis!
