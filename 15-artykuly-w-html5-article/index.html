@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Artykuły w HTML5 - article</title>
+</head>
+
+<body>
+    <!-- 
+        - <article> jest treścią samą w sobie np. post na blogu, albo komentarze do postu na blogu
+        - gdy artykuły są zagnieżdżone, zawartość artykułu wew. powinna być powiązana treścią za artykułem zew. (nadrzędnym)
+        - jeśli mamy do czyniena ze stroną, która posiada wiele artykułów i komentarze do nich, to realizujemy to za pomocą sekcji (<section>) zawierającej listę/siatkę artykułów
+     -->
+
+    <section>
+        <!-- artykuł nr. 1 -->
+        <article>
+            <header>
+                <h1>Tytuł posta na blogu</h1>
+                <time datetime="2019-09-14">14 września 2030</time>
+            </header>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt dolorem nemo beatae aperiam maxime! Ab
+                cumque placeat ex ducimus voluptatum laborum, facilis odit, nesciunt excepturi, quae ipsa. Assumenda
+                quidem, earum tenetur ad in, enim provident accusantium officia vero vitae dolor?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, numquam!</p>
+            <!-- sekcja komentarzy artykułu nr. 1 -->
+            <section>
+                <h2>Komentarze do postu na blogu</h2>
+
+                <article id="post-1-comment-1">
+                    <p>To jest super</p>
+                    <footer>
+                        <p>Imie autora komentarz</p>
+                        <time datetime="2019-09-20">20 września 2030</time>
+                    </footer>
+                </article>
+            </section>
+        </article>
+
+
+        <!-- artykuł nr. 2 -->
+        <article>
+            <header>
+                <h1>Tytuł posta na blogu</h1>
+                <time datetime="2019-09-14">14 września 2030</time>
+            </header>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt dolorem nemo beatae aperiam maxime! Ab
+                cumque placeat ex ducimus voluptatum laborum, facilis odit, nesciunt excepturi, quae ipsa. Assumenda
+                quidem, earum tenetur ad in, enim provident accusantium officia vero vitae dolor?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, numquam!</p>
+            <!-- sekcja komentarzy artykułu nr. 2 -->
+            <section>
+                <h2>Komentarze do postu na blogu</h2>
+
+                <article id="post-2-comment-1">
+                    <p>To jest super</p>
+                    <footer>
+                        <p>Imie autora komentarz</p>
+                        <time datetime="2019-09-20">20 września 2030</time>
+                    </footer>
+                </article>
+            </section>
+        </article>
+
+
+    </section>
+
+</body>
+
+</html>
