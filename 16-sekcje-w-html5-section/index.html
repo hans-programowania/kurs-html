@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sekcje w HTML5 - section</title>
+</head>
+<body>
+    <!-- 
+        Element <section> jest ogólnie częścią strony (sekcją strony), która grupuje nam treść. Każda typowa sekcja w HTML5 powinna zawierać tekst nagłówkowy (heading), który identyfikuje jakie treści są zawarte w tej sekcji strony.
+        Tekst nagłówkowy powienien być zawsze elementem podrzędnym sekcji :)
+        - element <section> może być używany razem z <article> jako sekcja zawierająca np. posty na blogu, ale i również jako część wew. artykułu grupująca w nim treści
+        - każda sekcja powinna zawierać tekst nagłówkowy, który indentyfikuje zawarte w niej treści
+        - NIE UŻYWAMY sekcji jako ogólnego kontenera do stylowania. W przypadku, gdy musimy zastosować element HTML5 jako kontener do stylowania używamy znacznika <div>
+
+     -->
+
+     <article>
+         <header>
+             <h2>Tytuł postu</h2>
+         </header>
+         <p>Wprowadzenie do posta</p>
+         <section>
+             <h3>Rozdział 1</h3>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, aspernatur? Voluptas earum eaque iusto tenetur illo. Tenetur odio consequatur eveniet?</p>
+         </section>
+         <section>
+             <h3>Rozdział 2</h3>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur debitis eveniet dolor necessitatibus modi aperiam cum veniam animi cumque quam soluta, ipsum laboriosam est labore aut voluptatibus reprehenderit repudiandae fugiat.</p>
+         </section>
+         <section>
+            <h3>Rodział 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam similique molestias blanditiis saepe? Beatae, iure!</p>
+         </section>
+         <section>
+            <h3>Komentarze do posta</h3>
+            <article>
+                <p>Komentarz 1</p>
+            </article>
+            <article>
+                <p>Komentarz 2</p>
+            </article>
+            <article>
+                <p>Komentarz 3</p>
+            </article>
+         </section>
+            
+
+
+     </article>
+</body>
+</html>
