@@ -5,167 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sekcje i Artykuły w HTML5</title>
+    <title>tmp</title>
 </head>
 
 <body>
 
     <!-- 
-        1. <nav> - navigacja - kiedy używamy
+        1. <nav> - navigacja - też jest sekcją i wspomnieć o tym przy omawianiu artykułów ;)
         2. <article>
         3. <main>
         4. <header>
         6. <footer>
         7. <section>
     -->
+    
+    nav>ul>li*5>a
 
+    header>h1{Slogan strony}+p>lorem30
 
-    <!-- nav -->
-    <nav>
-        <ul>
-            <li><a href="">Strona główna</a></li>
-            <li><a href="">O nas</a></li>
-            <li><a href="">Kontakt</a></li>
-        </ul>
-    </nav>
+    main>h2{Tytuł posta}+p>lorem100
 
+    aside>h3{O autorze}+p>lorem30
+
+    footer>p{Copyright &copy; Hans Programowania}
 
 
     <!-- 
-        The <article> element contains self-contained content like articles, blog posts, user comments or an interactive widget that could be distributed outside the context of the page, for example by RSS.
-        When article elements are nested, the contents of the inner article node should be related to the outer article
-        element.
-        A blog (section) with multiple posts (article), and comments (article) might look something like this.
+        Element <footer> jest stopką znajdującą się w dolnej części strony - i to jest jego najczęstsze użycie. 
 
-        When the main content of the page (excluding headers, footers, navigation bars, etc.)is simply one group of
-        elements. You can omit the <article> in favour of the <main> element.
-        <article>
-        <p>This doesn't make sense, this article has no real `context`.</p>
-        </article>
-        Instead, replace the article with a <main> element to indicate this is the main content for this page.
-        <main>
-        <p>I'm the main content, I don't need to belong to an article.</p>
-        </main>
-        If you use another element, ensure you specify the <main> ARIA role for correct interpretation and rendering across
-        multiple devices and non HTML5 browsers.
-        <section role="main">
-        <p>This section is the main content of this page.</p>
-        </section>
+        Dodatkowo element <footer> może być np. stopką artykułu lub sekcji :)
+
+        UWAGA: Element <footer> nie jest elementem "sekcji". Nie jest on nową sekcją na stronie, a tylko wprowadzeniem do istniejącej już sekcji :)
      -->
-    <!-- article -->
-    <section>
-        <!-- Each individual blog post is an <article> -->
-        <article>
-            <header>
-                <h1>Blog Post</h1>
-                <time datetime="2016-03-13">13th March 2016</time>
-            </header>
-            <p>The article element represents a self contained article or document.</p>
-            <p>The section element represents a grouping of content.</p>
-            <section>
-                <h2>Comments <small>relating to "Blog Post"</small></h2>
-                <!-- Related comment is also a self-contained article -->
-                <article id="user-comment-1">
-                    <p>Excellent!</p>
-                    <footer>
-                        <p>...</p><time>...</time>
-                    </footer>
-                </article>
-            </section>
-        </article>
-        <!-- ./repeat: <article> -->
-    </section>
 
-
-
-
-    <!-- 
-        - The <main> element should only ever be used at most once on a single page.
-        - The <main> element must not be included as a descendant of an article, aside, footer, header or nav element.
-
-        In the following example, we're displaying a single blog post (and related information like references and comments).
-    -->
-    <!-- main -->
-    <main>
-        <h1>Individual Blog Post</h1>
-        <p>An introduction for the post.</p>
-        <article>
-            <h2>References</h2>
-            <p>...</p>
-        </article>
-        <article>
-            GoalKicker.com – HTML5 Notes for Professionals 62
-            <h2>Comments</h2> ...
-        </article>
-    </main>
-
-
-
-    <!-- header -->
-    Examples:
-    <header>
-        <p>Welcome to...</p>
-        <h1>Voidwars!</h1>
-    </header>
-
-    In this example, the article has a header.
-    <article>
-        <header>
-            <h1>Flexbox: The definitive guide</h1>
-        </header>
-        <p>The guide about Flexbox was supposed to be here, but it turned out Wes wasn’t a Flexbox expert
-            either.</p>
-
-
-
-        <footer>
-            <a href="">FAQ</a>
-            <a href="">Polityka prywatności</a>
-            <a href="">Regulamin</a>
-        </footer>
-    </article>
-
-
-    <!-- 
-        The <footer> element contains the footer part of the page.
-        Here is an example for <footer> element that contain p paragraph tag.
-     -->
+     
     <!-- footer -->
     <footer>
         <p>All rights reserved</p>
     </footer>
 
-
-
-
-    <!-- 
-        The <section> element represents a generic section to thematically group content. Every section, typically, should
-        be able to be identified with a heading element as a child of the section.
-        - You can use the <section> element within an <article> and vice-versa.
-        - Every section should have a theme (a heading element identifying this region)
-        - Don't use the <section> element as a general styling 'container'.
-        If you need a container to apply styling, use a <div> instead.
-        In the following example, we're displaying a single blog post with multiple chapters each chapter is a section (a set
-        of thematically grouped content, which can be identified by the heading elements in each section). 
-    -->
-    <!-- section -->
-    <article>
-        <header>
-            <h2>Blog Post</h2>
-        </header>
-        <p>An introduction for the post.</p>
-        <section>
-            <h3>Chapter 1</h3>
-            <p>...</p>
-        </section>
-        <section>
-            <h3>Chapter 2</h3>
-            <p>...</p>
-        </section>
-        <section>
-            <h3>Comments</h3> ...
-        </section>
-    </article>
 
 
 </body>
