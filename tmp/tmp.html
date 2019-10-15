@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tmp</title>
+</head>
+
+<body>
+
+    <!-- 
+        
+    Skróty emmet do budowy struktury strony:
+
+    Nawigacja:
+        nav>ul>li*5>a{nav link $}
+
+    Nagłówek:
+        header>h1{Slogan strony}+p>lorem30
+
+    Główna sekcja strony:
+        main>h2{Tytuł posta}+p>lorem100
+
+        Budowa tabelki poniżej paragrafu <p> w głównej sekcji strony:
+            table>(tr>th*4)+(tr*2>td*4)
+
+    Stopka strony:
+        footer>p{Copyright &copy; Hans Programowania} 
+
+    -->
+
+
+    <!-- 
+        Element HTML5 <table> pozwala na umieszczenie w nim danych tabelarycznych.
+        Tabelka jest elementem dwuwymiarowym. Składa się z wierdszy i kolumn. W miejscu przecięcia się kolumny z wierszem jest komórka, w której umieszczamy dane, które zostaną pokazane w tabeli. Przykładowymi danymi zastosowanymi w tabelach mogą być np. obrazki, linki, teksty itp. 
+    -->
+    <!-- 
+        1. Utworzenie struktury strony
+        2. Utworzenie tabelki table>(tr>th*4)+(tr*2>td*4) z obecnością 2 osób <table border="1"> 
+        ---------
+        3. rowspan="2" - 16.09 obie osoby są w pracy
+        4. colspan="4" - podsumowanie obecności w <strong>
+        5. grupowanie column <colgroup> <col span=""> i dodanie styli <style> i przerobienie borderu do styli
+        ---------
+        6. Tytuł i grupowanie tabelek <caption>, <thead>, <tbody>, <tfoot>
+        7. Dodanie zasięgu <th scope="col"> <th scope="row">
+    -->
+    <table>
+        <caption>Obecność w pracy</caption>
+        <colgroup>
+            <col class="data">
+            <col span="2" class="imie-nazwisko">
+            <col class="obecnosc">
+        </colgroup>
+        <thead>
+            <tr>
+                <th></th>
+                <th scope="col">Data</th>
+                <th scope="col">Imie</th>
+                <th scope="col">Nazwisko</th>
+                <th scope="col">Obecność</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Kierownik</th>
+                <td>14.09</td>
+                <td>Adam</td>
+                <td>Nowak</td>
+                <td>TAK</td>
+            </tr>
+            <tr>
+                <th scope="row">Sprzedawca</th>
+                <td>15.09</td>
+                <td>Anna</td>
+                <td>Kowalska</td>
+                <td>TAK</td>
+            </tr>
+            <tr>
+                <th scope="row">Kierownik</th>
+                <td rowspan="2">16.09</td>
+                <td>Adam</td>
+                <td>Nowak</td>
+                <td>TAK</td>
+            </tr>
+            <tr>
+                <th scope="row">Sprzedawca</th>
+                <td>Anna</td>
+                <td>Kowalska</td>
+                <td>TAK</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5"><strong>Podsumowanie - OBECNOŚĆ 100%</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        .imie-nazwisko {
+            background-color: aquamarine;
+        }
+    </style>
+
+</body>
+
+</html>
