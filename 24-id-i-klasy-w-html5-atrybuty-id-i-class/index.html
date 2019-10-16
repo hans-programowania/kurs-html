@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ID i klasy w HTML5 - Atrybuty id i class</title>
+</head>
+
+<body>
+
+    <!-- 
+        
+    Skróty emmet do budowy struktury strony:
+
+    Nawigacja:
+        nav>ul>li*5>a{nav link $}
+
+    Nagłówek:
+        header>h1{Slogan strony}+p>lorem30
+
+    Główna sekcja strony:
+        main>h2{Tytuł posta}+p>lorem100
+
+        Budowa tabelki poniżej paragrafu <p> w głównej sekcji strony:
+            table>tr*3>th*3
+
+    Stopka strony:
+        footer>p{Copyright &copy; Hans Programowania} 
+
+    -->
+
+    <!-- 
+        IDki i CLASSy tworzą referencje do elementów HTML5, aby móc je łatwiej ostylować w CSS i/lub je zmodyfikować za pomocą JavaScript. Atrybut class może być użyty do jednego lub więcej tagów HTMLowych (możemy je zgrupować). Natomiast atrybut id musi się odnosić TYLKO i WYŁĄCZNIE do jednego elementu na stronie!
+    -->
+
+    <!-- Nawigacja: -->
+    <nav>
+        <ul>
+            <li><a href="">nav link 1</a></li>
+            <li><a href="">nav link 2</a></li>
+            <li><a href="">nav link 3</a></li>
+            <li><a href="">nav link 4</a></li>
+            <li><a href="">nav link 5</a></li>
+        </ul>
+    </nav>
+
+    <!-- Nagłówek: -->
+    <header>
+        <h1>Slogan strony</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias alias ipsa quidem eaque sit unde,
+            inventore illum? Cum iusto rem maxime voluptas, a sunt magni repellendus quas dignissimos recusandae illo.
+        </p>
+    </header>
+
+    <!-- Główna sekcja strony: -->
+    <main>
+        <h2 id="tytul-posta">Tytuł posta</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui eius molestiae quae, atque ipsam rerum ut
+            maiores ipsa ullam eligendi, hic eos non culpa saepe at placeat cum assumenda numquam nobis quod architecto
+            deserunt esse? Ea repudiandae deleniti dolores animi vero non nihil veritatis. Architecto voluptate incidunt
+            eligendi magnam, et veritatis magni, dolorem enim corporis, sunt beatae. Veniam recusandae, temporibus
+            exercitationem autem animi tenetur a omnis repudiandae perferendis dolores repellat ipsa sunt. Tempore sunt
+            fugit, nesciunt iste temporibus eius consequatur atque alias repudiandae. Voluptatibus dolorem earum impedit
+            molestiae natus molestias. Explicabo, temporibus quaerat id harum numquam cupiditate tenetur ipsum
+            voluptatum.
+        </p>
+        <p class="szary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, expedita?</p>
+        <p class="szary bg-blekit">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus esse quam commodi architecto magni totam ut amet autem ipsum ab?</p>
+        <p class="szary bg-blekit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, aut doloribus a delectus nam repellendus?</p>
+
+
+    </main>
+
+
+    <!-- Stopka strony: -->
+    <footer>
+        <p>Copyright &copy; Hans Programowania</p>
+    </footer>
+
+    <style>
+        #tytul-posta {
+            color: blue;
+        }
+        .szary {
+            color: gray;
+        }
+        .bg-blekit {
+            background-color: lightblue;
+        }
+    </style>
+</body>
+
+</html>
