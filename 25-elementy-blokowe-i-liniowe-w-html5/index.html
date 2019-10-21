@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elementy liniowe i blokowe w HTML5</title>
+</head>
+
+<body>
+
+    <!-- 
+        
+    Skróty emmet do budowy struktury strony:
+
+    Nawigacja:
+        nav>ul>li*5>a{nav link $}
+
+    Nagłówek:
+        header>h1{Slogan strony}+p>lorem30
+
+    Główna sekcja strony:
+        main>h2{Tytuł posta}+p>lorem100
+
+    Stopka strony:
+        footer>p{Copyright &copy; Hans Programowania} 
+
+    -->
+
+
+    <!-- 
+        Zależnie od tego ilości zajmowanego miejsca na stronie internetowej elementy w języku HTML5 możemy podzielić na LINIOWE i BLOKOWE. Elementy liniowe układają się w lini jeden obok drugiegi, a każdy z nich zajmuje tylko tyle miejsca ile sam potrzebuje. Natomiast elementy blokowe zawsze wyświetlają się w nowej linii i zajmują całą szerokość kontenera, w którym się znajdują oraz wymuszają na kolejnych elememntach aby układały się pod nimi w kolejej lini.
+    -->
+
+
+    <!-- Nawigacja: -->
+    <nav>
+        <ul>
+            <li><a href="">nav link 1</a></li>
+            <li><a href="">nav link 2</a></li>
+            <li><a href="">nav link 3</a></li>
+            <li><a href="">nav link 4</a></li>
+            <li><a href="">nav link 5</a></li>
+        </ul>
+    </nav>
+
+    <!-- Nagłówek: -->
+    <header>
+        <h1>Slogan strony</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias alias ipsa quidem eaque sit unde,
+            inventore illum? Cum iusto rem maxime voluptas, a sunt magni repellendus quas dignissimos recusandae illo.
+        </p>
+    </header>
+
+    <!-- Główna sekcja strony: -->
+    <main>
+        <h2 id="tytul-posta">Tytuł posta</h2>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur aliquam sunt quidem fugiat vel facere soluta delectus ipsum nobis eius, eum harum dolorem iste dolore? Itaque ut amet repudiandae delectus.
+            </p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem <span class="zielony">ipsum</span> <span class="czerwony">dolor</span> sit.</li>
+                <li>Lorem <a href="https://google.com">Google</a>
+                <a href="https://duckduckgo.com">DuckDuckGo</a>
+                <a href="https://qwant.com">Qwant</a> ipsum <strong>dolor</strong> sit amet consectetur adipisicing elit.</li>
+            </ul>
+        </div>
+        <!-- Przykłady znaczników blokowych: <div> <p> <h1>-<h6> <ul> <ol> <li> <dl> <dt> <dd> -->
+        <!-- Przykłady znaczników liniowych: <span> <a> <b> <em> <i> <img> <strong> -->
+    </main>
+
+
+    <!-- Stopka strony: -->
+    <footer>
+        <p>Copyright &copy; Hans Programowania</p>
+    </footer>
+
+
+    <style>
+        .zielony {
+            color: greenyellow;
+        }
+        .czerwony {
+            color: red;
+        }
+    </style>
+
+</body>
+
+</html>
