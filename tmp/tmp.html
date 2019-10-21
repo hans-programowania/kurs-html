@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>tmp</title>
+    <title>Elementy liniowe i blokowe w HTML5</title>
 </head>
 
 <body>
@@ -23,9 +23,6 @@
     Główna sekcja strony:
         main>h2{Tytuł posta}+p>lorem100
 
-        Budowa tabelki poniżej paragrafu <p> w głównej sekcji strony:
-            table>(tr>th*4)+(tr*2>td*4)
-
     Stopka strony:
         footer>p{Copyright &copy; Hans Programowania} 
 
@@ -33,80 +30,66 @@
 
 
     <!-- 
-        Element HTML5 <table> pozwala na umieszczenie w nim danych tabelarycznych.
-        Tabelka jest elementem dwuwymiarowym. Składa się z wierdszy i kolumn. W miejscu przecięcia się kolumny z wierszem jest komórka, w której umieszczamy dane, które zostaną pokazane w tabeli. Przykładowymi danymi zastosowanymi w tabelach mogą być np. obrazki, linki, teksty itp. 
+        Zależnie od tego ilości zajmowanego miejsca na stronie internetowej elementy w języku HTML5 możemy podzielić na LINIOWE i BLOKOWE. Elementy liniowe układają się w lini jeden obok drugiegi, a każdy z nich zajmuje tylko tyle miejsca ile sam potrzebuje. Natomiast elementy blokowe zawsze wyświetlają się w nowej linii i zajmują całą szerokość kontenera, w którym się znajdują oraz wymuszają na kolejnych elememntach aby układały się pod nimi w kolejej lini.
     -->
     <!-- 
         1. Utworzenie struktury strony
-        2. Utworzenie tabelki table>(tr>th*4)+(tr*2>td*4) z obecnością 2 osób <table border="1"> 
-        ---------
-        3. rowspan="2" - 16.09 obie osoby są w pracy
-        4. colspan="4" - podsumowanie obecności w <strong>
-        5. grupowanie column <colgroup> <col span=""> i dodanie styli <style> i przerobienie borderu do styli
-        ---------
-        6. Tytuł i grupowanie tabelek <caption>, <thead>, <tbody>, <tfoot>
-        7. Dodanie zasięgu <th scope="col"> <th scope="row">
+        2. Elementy blokowe - domyślny element blokowy (kontener) <div>
+        3. Inne elementy blokowe <div> <p> <h1>-<h6> <ul> <ol> <li> <dl> <dt> <dd>
+        4. Elementy liniowe - domyślny element liniowy <span> - .zielony .czerwony
+        5. Stworzenie 3 linków a
+        6. Przykłady elementów liniowych <span> <a> <b> <em> <i> <img> <strong>   
     -->
-    <table>
-        <caption>Obecność w pracy</caption>
-        <colgroup>
-            <col class="data">
-            <col span="2" class="imie-nazwisko">
-            <col class="obecnosc">
-        </colgroup>
-        <thead>
-            <tr>
-                <th></th>
-                <th scope="col">Data</th>
-                <th scope="col">Imie</th>
-                <th scope="col">Nazwisko</th>
-                <th scope="col">Obecność</th>
-            </tr>
-        </thead>
 
-        <tbody>
-            <tr>
-                <th scope="row">Kierownik</th>
-                <td>14.09</td>
-                <td>Adam</td>
-                <td>Nowak</td>
-                <td>TAK</td>
-            </tr>
-            <tr>
-                <th scope="row">Sprzedawca</th>
-                <td>15.09</td>
-                <td>Anna</td>
-                <td>Kowalska</td>
-                <td>TAK</td>
-            </tr>
-            <tr>
-                <th scope="row">Kierownik</th>
-                <td rowspan="2">16.09</td>
-                <td>Adam</td>
-                <td>Nowak</td>
-                <td>TAK</td>
-            </tr>
-            <tr>
-                <th scope="row">Sprzedawca</th>
-                <td>Anna</td>
-                <td>Kowalska</td>
-                <td>TAK</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="5"><strong>Podsumowanie - OBECNOŚĆ 100%</strong></td>
-            </tr>
-        </tfoot>
-    </table>
+    <!-- Nawigacja: -->
+    <nav>
+        <ul>
+            <li><a href="">nav link 1</a></li>
+            <li><a href="">nav link 2</a></li>
+            <li><a href="">nav link 3</a></li>
+            <li><a href="">nav link 4</a></li>
+            <li><a href="">nav link 5</a></li>
+        </ul>
+    </nav>
+
+    <!-- Nagłówek: -->
+    <header>
+        <h1>Slogan strony</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias alias ipsa quidem eaque sit unde,
+            inventore illum? Cum iusto rem maxime voluptas, a sunt magni repellendus quas dignissimos recusandae illo.
+        </p>
+    </header>
+
+    <!-- Główna sekcja strony: -->
+    <main>
+        <h2 id="tytul-posta">Tytuł posta</h2>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, cumque.
+            </p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem <span class="zielony">ipsum</span> <span class="czerwony">dolor</span> sit.</li>
+                <li>Lorem, <a href="https://google.com">Google</a> <a href="https://duckduck.go">DuckDuckGo</a> <a href="https://qwant.com">Qwant.com</a>ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+            <!-- Przykłady znaczników blokowych: <div> <p> <h1>-<h6> <ul> <ol> <li> <dl> <dt> <dd></dd> -->
+            <!-- Przykłady znaczników liniowych: <span> <a> <b> <em> <i> <img> <strong></strong> -->
+        </div>
+    </main>
+
+
+    <!-- Stopka strony: -->
+    <footer>
+        <p>Copyright &copy; Hans Programowania</p>
+    </footer>
 
 
     <style>
-        table, th, td {
-            border: 1px solid black;
+        .zielony {
+            color: greenyellow;
         }
-        .imie-nazwisko {
-            background-color: aquamarine;
+        .czerwony {
+            color: red;
         }
     </style>
 
