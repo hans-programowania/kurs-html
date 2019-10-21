@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Elementy liniowe i blokowe w HTML5</title>
+    <title>Cudzysłowie i cytowanie tekstów w HTML5 - blockquote, q i cite</title>
 </head>
 
 <body>
@@ -30,16 +30,20 @@
 
 
     <!-- 
-        Zależnie od tego ilości zajmowanego miejsca na stronie internetowej elementy w języku HTML5 możemy podzielić na LINIOWE i BLOKOWE. Elementy liniowe układają się w lini jeden obok drugiegi, a każdy z nich zajmuje tylko tyle miejsca ile sam potrzebuje. Natomiast elementy blokowe zawsze wyświetlają się w nowej linii i zajmują całą szerokość kontenera, w którym się znajdują oraz wymuszają na kolejnych elememntach aby układały się pod nimi w kolejej lini.
+        Cytat blokowy <blackquote> mówi nam, że tekst jest większym cycatem. Zazwyczaj używamy go do umieszczenia np. całego paragrafu cytowanego tekstu. Cytat blokowy może zawierać atrybut "cite", który określa źródłowy dokument lub wiadomość dla cytowanej informacji. Ten atrybut jest przeznaczony do wskazywania informacji wyjaśniającej kontekst lub powiązanie cytatu. Element jest używany bardzo często w artykułach.
+
+        Cytat liniowy <q> jest używany do zacytowania tekstu w paragrafie. Może także posiadać atrybut "cite", którego znaczenie jest analogiczne jak w przypadku cytatu blokowego <blackquote>.
+
+        Element <cite> zawiera odwołanie do zasobów, skąd pochodzi cytat - np. tytuł, lub reguła w dokumentacji.
     -->
+
     <!-- 
-        1. Utworzenie struktury strony
-        2. Elementy blokowe - domyślny element blokowy (kontener) <div>
-        3. Inne elementy blokowe <div> <p> <h1>-<h6> <ul> <ol> <li> <dl> <dt> <dd>
-        4. Elementy liniowe - domyślny element liniowy <span> - .zielony .czerwony
-        5. Stworzenie 3 linków a
-        6. Przykłady elementów liniowych <span> <a> <b> <em> <i> <img> <strong>   
+        1. Stworzenie sekcji <section> i jej tytułu <h2>
+        2. Stworzenie 2 artykułów <article>
+        3. Pierwszy artykuł ma <header> z <h3>, <blackquote> zawierające <h3>, <p> i na samym końcu można pokazać <footer>
+        4. Drugi artykuł zawiera <h3> i paragraf, w którym jest cytat <q> oraz <cite> odnoszące do dokumentacji Mozilla 
     -->
+
 
     <!-- Nawigacja: -->
     <nav>
@@ -61,21 +65,33 @@
     </header>
 
     <!-- Główna sekcja strony: -->
-    <main>
-        <h2 id="tytul-posta">Tytuł posta</h2>
-        <div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, cumque.
+    <section id="main">
+        <h2>Lista artykułów</h2>
+        <article>
+            <header>
+                <h3>Wszystko na temat przeglądarki Opera</h2>
+            </header>
+            <blockquote cite="https://pl.wikipedia.org/wiki/Opera_(przegl%C4%85darka)">
+                <h3>Najszybsza przeglądarka w internecie</h3>
+                <p>
+                    To darmowa przeglądarka internetowa, tworzona i rozwijana przez norweską firmę Opera Software ASA.
+                    <br />
+                    Opera jest programem darmowym, opartym nalicencji freeware. Jest aplikacją własnościową o zamkniętym
+                    kodzie źródłowym.
+                </p>
+                <footer>
+                    - Zespół, <a href="https://pl.wikipedia.org/wiki/Opera_(przegl%C4%85darka)">Wikipedia</a>
+                </footer>
+            </blockquote>
+        </article>
+
+        <article>
+            <h2>Sukces przeglądarki Firefox</h2>
+            <p>Nawiązując do <cite>dokumentacji Mozilla</cite>,
+                <q cite="https://www.mozilla.org/en-US/about/history/details/">Przeglądarka Firefox 1.0 została wydana w 2004 roku i odniosła wielki sukces</q>
             </p>
-            <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem <span class="zielony">ipsum</span> <span class="czerwony">dolor</span> sit.</li>
-                <li>Lorem, <a href="https://google.com">Google</a> <a href="https://duckduck.go">DuckDuckGo</a> <a href="https://qwant.com">Qwant.com</a>ipsum dolor sit amet consectetur adipisicing elit.</li>
-            </ul>
-            <!-- Przykłady znaczników blokowych: <div> <p> <h1>-<h6> <ul> <ol> <li> <dl> <dt> <dd></dd> -->
-            <!-- Przykłady znaczników liniowych: <span> <a> <b> <em> <i> <img> <strong></strong> -->
-        </div>
-    </main>
+        </article>
+    </section>
 
 
     <!-- Stopka strony: -->
@@ -85,12 +101,6 @@
 
 
     <style>
-        .zielony {
-            color: greenyellow;
-        }
-        .czerwony {
-            color: red;
-        }
     </style>
 
 </body>
