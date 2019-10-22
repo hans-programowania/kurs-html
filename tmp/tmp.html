@@ -30,18 +30,7 @@
 
 
     <!-- 
-        Cytat blokowy <blackquote> mówi nam, że tekst jest większym cycatem. Zazwyczaj używamy go do umieszczenia np. całego paragrafu cytowanego tekstu. Cytat blokowy może zawierać atrybut "cite", który określa źródłowy dokument lub wiadomość dla cytowanej informacji. Ten atrybut jest przeznaczony do wskazywania informacji wyjaśniającej kontekst lub powiązanie cytatu. Element jest używany bardzo często w artykułach.
-
-        Cytat liniowy <q> jest używany do zacytowania tekstu w paragrafie. Może także posiadać atrybut "cite", którego znaczenie jest analogiczne jak w przypadku cytatu blokowego <blackquote>.
-
-        Element <cite> zawiera odwołanie do zasobów, skąd pochodzi cytat - np. tytuł, lub reguła w dokumentacji.
-    -->
-
-    <!-- 
-        1. Stworzenie sekcji <section> i jej tytułu <h2>
-        2. Stworzenie 2 artykułów <article>
-        3. Pierwszy artykuł ma <header> z <h3>, <blackquote> zawierające <h3>, <p> i na samym końcu można pokazać <footer>
-        4. Drugi artykuł zawiera <h3> i paragraf, w którym jest cytat <q> oraz <cite> odnoszące do dokumentacji Mozilla 
+        Zależnie od tego ilości zajmowanego miejsca na stronie internetowej elementy w języku HTML5 możemy podzielić na LINIOWE i BLOKOWE. Elementy liniowe układają się w lini jeden obok drugiegi, a każdy z nich zajmuje tylko tyle miejsca ile sam potrzebuje. Natomiast elementy blokowe zawsze wyświetlają się w nowej linii i zajmują całą szerokość kontenera, w którym się znajdują oraz wymuszają na kolejnych elememntach aby układały się pod nimi w kolejej lini.
     -->
 
 
@@ -65,33 +54,30 @@
     </header>
 
     <!-- Główna sekcja strony: -->
-    <section id="main">
-        <h2>Lista artykułów</h2>
-        <article>
-            <header>
-                <h3>Wszystko na temat przeglądarki Opera</h2>
-            </header>
-            <blockquote cite="https://pl.wikipedia.org/wiki/Opera_(przegl%C4%85darka)">
-                <h3>Najszybsza przeglądarka w internecie</h3>
-                <p>
-                    To darmowa przeglądarka internetowa, tworzona i rozwijana przez norweską firmę Opera Software ASA.
-                    <br />
-                    Opera jest programem darmowym, opartym nalicencji freeware. Jest aplikacją własnościową o zamkniętym
-                    kodzie źródłowym.
-                </p>
-                <footer>
-                    - Zespół, <a href="https://pl.wikipedia.org/wiki/Opera_(przegl%C4%85darka)">Wikipedia</a>
-                </footer>
-            </blockquote>
-        </article>
+    <main>
+        <h2 id="tytul-posta">Kawałek kodu ;)</h2>
+        <p>
+            Przeanalizuj kawałek kodu JavaScript:
+            <pre>
+                <code>
+    let x = 42;
+    if (x == 42) {
+        console.log("Tak warunek został spełniony");
+    }
+                </code>
+            </pre>
 
-        <article>
-            <h2>Sukces przeglądarki Firefox</h2>
-            <p>Nawiązując do <cite>dokumentacji Mozilla</cite>,
-                <q cite="https://www.mozilla.org/en-US/about/history/details/">Przeglądarka Firefox 1.0 została wydana w 2004 roku i odniosła wielki sukces</q>
-            </p>
-        </article>
-    </section>
+            Oraz przeanalizuj poniższy kod HTML5 i użycie znaków specialnych:
+
+            <pre>
+                <code>
+    &lt;p>Znacznika p używamy do zapisywania paragrafów na stronie internetowej :).&lt;/p>  
+                </code>
+            </pre>
+
+            https://www.html.am/reference/html-special-characters.cfm
+        </p>
+    </main>
 
 
     <!-- Stopka strony: -->
