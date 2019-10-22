@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cudzysłowie i cytowanie tekstów w HTML5 - blockquote, q i cite</title>
+</head>
+
+<body>
+
+    <!-- 
+        
+    Skróty emmet do budowy struktury strony:
+
+    Nawigacja:
+        nav>ul>li*5>a{nav link $}
+
+    Nagłówek:
+        header>h1{Slogan strony}+p>lorem30
+
+    Główna sekcja strony:
+        section#main>h2{Lista artykułów}+article*2
+
+    Stopka strony:
+        footer>p{Copyright &copy; Hans Programowania} 
+
+    -->
+
+
+    <!-- 
+        Cytat blokowy <blackquote> mówi nam, że tekst jest większym cycatem. Zazwyczaj używamy go do umieszczenia np. całego paragrafu cytowanego tekstu. Cytat blokowy może zawierać atrybut "cite", który określa źródłowy dokument lub wiadomość dla cytowanej informacji. Ten atrybut jest przeznaczony do wskazywania informacji wyjaśniającej kontekst lub powiązanie cytatu. Element jest używany bardzo często w artykułach.
+
+        Cytat liniowy <q> jest używany do zacytowania tekstu w paragrafie. Może także posiadać atrybut "cite", którego znaczenie jest analogiczne jak w przypadku cytatu blokowego <blackquote>.
+
+        Element <cite> zawiera odwołanie do zasobów, skąd pochodzi cytat - np. tytuł, lub reguła w dokumentacji.
+    -->
+
+
+    <!-- Nawigacja: -->
+    <nav>
+        <ul>
+            <li><a href="">nav link 1</a></li>
+            <li><a href="">nav link 2</a></li>
+            <li><a href="">nav link 3</a></li>
+            <li><a href="">nav link 4</a></li>
+            <li><a href="">nav link 5</a></li>
+        </ul>
+    </nav>
+
+    <!-- Nagłówek: -->
+    <header>
+        <h1>Slogan strony</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias alias ipsa quidem eaque sit unde,
+            inventore illum? Cum iusto rem maxime voluptas, a sunt magni repellendus quas dignissimos recusandae illo.
+        </p>
+    </header>
+
+    <!-- Główna sekcja strony: -->
+    <section id="main">
+        <h2>Lista artykułów</h2>
+        <article>
+            <header>
+                <h3>Wszystko na temat przeglądarki Opera</h3>
+            </header>
+            <blackquote cite="https://pl.wikipedia.org/wiki/Opera_(przegl%C4%85darka)">
+                <h4>Najszybsza przeglądarka w internecie</h4>
+                <p>
+                    To darmowa przeglądarka internetowa, tworzona i rozwijana przez norweską firmę Opera Software ASA.
+                    <br />
+                    Opera jest programem darmowym, opartym na licencji freeware. Jest aplikacją własnościową o zamkniętym kodzie źródłowym.
+                </p>
+                <footer>
+                    - Zespół <a href="https://pl.wikipedia.org/wiki/Opera_(przegl%C4%85darka)">Wikipedia</a>
+                </footer>
+            </blackquote>
+        </article>
+
+        <article>
+            <h3>Sukces przeglądarki Firefox</h3>
+            <p>
+                Nawiązując do <cite>dokumentacji Mozilla</cite> <q cite="https://www.mozilla.org/en-US/about/history/">przeglądrka Firefox 1.0 została wydana w 2004 roku i odniosła wielki sukces</q>
+            </p>
+        </article>
+    </section>
+
+    <!-- Stopka strony: -->
+    <footer>
+        <p>Copyright &copy; Hans Programowania</p>
+    </footer>
+
+
+    <style>
+    </style>
+
+</body>
+
+</html>
